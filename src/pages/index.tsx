@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 
-const foo = 'black'
+// const foo = 'black'
 
 const Home: NextPage = () => {
    return (
