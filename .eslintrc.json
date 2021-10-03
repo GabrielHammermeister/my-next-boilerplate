@@ -3,6 +3,11 @@
       "browser": true,
       "es2021": true
    },
+   "settings": {
+      "react": {
+         "version": "detect"
+      }
+   },
    "extends": [
       "eslint:recommended",
       "plugin:react/recommended",
@@ -16,9 +21,8 @@
       "ecmaVersion": 12,
       "sourceType": "module"
    },
-   "plugins": ["react", "@typescript-eslint"],
+   "plugins": ["react", "@typescript-eslint", "react-hooks"],
    "rules": {
-      // ...
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "react/prop-types": "off",
