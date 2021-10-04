@@ -1,13 +1,5 @@
-import type { NextPage } from 'next'
+import Main from 'components/Main'
 
-// const foo = 'black'
-
-const Home: NextPage = () => {
-   return (
-      <div>
-         <h1>Welcome to may damsdfa to my page</h1>
-      </div>
-   )
+export default function Home() {
+   return <Main />
 }
-
-export default Home
