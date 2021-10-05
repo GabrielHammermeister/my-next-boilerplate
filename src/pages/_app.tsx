@@ -10,6 +10,7 @@ function App({ Component, pageProps }: AppProps) {
             <title>React Avancado</title>
             <link rel="shortcut icon" href="/img/icon-512.png" />
             <link rel="apple-touch-icon" href="/img/icon-512.png" />
+            <link rel="manifest" href="/manifest.json" />
             <meta
                name="description"
                content="A simples project for learning to work with TypeScript, React, Next Js, and more. "
