@@ -1,5 +1,5 @@
 import Main from '.'
-import { Meta } from '@storybook/react'
+import { Meta, Story } from '@storybook/react'
 import { withKnobs, text } from '@storybook/addon-knobs'
 
 export default {
@@ -8,7 +8,7 @@ export default {
    decorators: [withKnobs]
 } as Meta
 
-export const Basic = () => (
+export const Basic: Story = () => (
    <Main
       title={text('Title', 'React Avançado')}
       description={text(
