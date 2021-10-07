@@ -8,11 +8,12 @@
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
     "prepare": "husky install",
-    "test": "jest",
-    "test:watch": "yarn test --watch",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
-    "generate": "yarn plop --plopfile ./generators/plopfile.ts"
+    "generate": "yarn plop --plopfile ./generators/plopfile.ts",
+    "test": "jest --maxWorkers=50%",
+    "test:watch": "jest --watch --maxWorkers=25%",
+    "test:ci": "jest --runInBand"
   },
   "lint-staged": {
     "src/**/*": [
